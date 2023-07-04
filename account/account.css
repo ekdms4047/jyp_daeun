@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  background-color: var(--bg-color);
+  font-family: var(--en-txt-font);
+  color:var(--txt-color);
+}
+.flex {
+  display: flex;
+}
+
+/***** header *****/
+header {
+}
+header nav{
+  align-items: center;
+  /* width: 95%; */
+  padding: 15px;
+}
+header nav h1{
+  width: 10%;
+  text-indent: -9999px;
+  background: #ffffff url(../common/logo.png) no-repeat 50% /120px;
+  padding: 12px;
+}
+header nav menu {
+  width: 90%;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  margin-left: 10px;
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+header nav menu li {
+  width: 33%;
+}
+header nav menu li:nth-child(4) {
+  width: 15%;
+  margin: 0 10px;
+  /* border-left: 10px solid var(--bg-color); */
+  padding: 0;
+}
+header nav menu li a{
+  display: block;
+  height: 100%;
+}
+/***** login *****/
+.sub_login {}
+.sub_login .login {}
+.sub_login .login img {
+  width: 50px;
+}
+.sub_login .login h1 {}
+.sub_login .login input {}
+.sub_login .login button {}
+.sub_login .login p {}
+.sub_login .login p a{}
+.sub_login .top {}
+.sub_login .middle {}
+.sub_login .bottom {}
+.sub_login .bottom {}
