@@ -17,38 +17,40 @@ header nav {
   align-items: center;
   /* width: 95%; */
   padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-20);
 }
 header nav h1 {
   width: 10%;
   text-indent: -9999px;
   background: #ffffff url(../common/logo.png) no-repeat 50% /120px;
   padding: 12px;
+  border-radius: 5px;
 }
 header nav menu {
-  width: 90%;
-  justify-content: flex-end;
+  width: 80%;
+  justify-content: space-around;
   background-color: #ffffff;
-  margin-left: 10px;
-  padding: 12px;
-  text-transform: uppercase;
-  text-align: center;
-}
-header nav menu li {
-  width: 33%;
-}
-header nav menu li:nth-child(4) {
-  width: 15%;
   margin: 0 10px;
-  /* border-left: 10px solid var(--bg-color); */
-  padding: 0;
+  padding: 12px;
+  border-radius: 5px;
 }
-header nav menu li a {
+
+header nav a {
   display: block;
   height: 100%;
 }
+header nav .account {
+  width: 10%;
+  background-color: #ffffff;
+  height: 100%;
+  padding: 12px;
+  border-radius: 5px;
+}
 /***** main_collection *****/
 .main_collection {
-  width: 100%;
+  /* width: %; */
   text-align: center;
   text-transform: uppercase;
   padding-top: 120px;
@@ -79,6 +81,7 @@ header nav menu li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: var(--font-size-20);
 }
 .main_collection .collection figure:nth-child(1) {
   grid-column: 1/3;
@@ -102,9 +105,14 @@ header nav menu li a {
   width: 305px;
   height: 492px;
   border-radius: 10px;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+.main_collection .collection figure img:hover {
+  filter: grayscale(0);
 }
 .main_collection .collection figure .glow-big {
-  width: 740px;
+  width: 750px;
   height: 490px;
 }
 .main_collection .collection figure figcaption {
@@ -143,6 +151,7 @@ footer .git {
   border-bottom: 1px solid #131313;
   padding: 7px 0;
   margin-bottom: 20px;
+  font-family: var(--kr-sub-font);
 }
 footer .git li:first-child,
 footer .git li:last-child {
